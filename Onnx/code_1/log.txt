@@ -1,0 +1,1627 @@
+ir_version: 4
+opset_import_size: 2
+OperatorSetIdProto domain: 
+OperatorSetIdProto version: 9
+producer_name: CNTK
+producer_version: 2.7
+domain: ai.cntk
+model_version: 1
+doc_string: 
+metadata_props_size: 0
+functions_size: 0
+
+***************** graph *****************
+graph.name: CNTKGraph
+graph.doc_string: <<<Uid, ONNXNodeName>>> pair: <<<OptimizedRNNStack11191_Output_0, model_rnn0_Output>>> <<<Times10301, 0_T>>> <<<Plus11584, Plus11584>>> <<<ElementTimes10861_Output_0, ElementTimes10861_Output_0>>> <<<Times10631, Times10631>>> <<<Plus10364_Output_0, Plus10364_Output_0>>> <<<Plus10355_Output_0, Plus10355_Output_0>>> <<<Block11359_Output_0, Block11359_Output_0>>> <<<Plus10319_Output_0, Plus10319_Output_0>>> <<<Block11359, Block11359>>> <<<Plus10319, Plus10319>>> <<<Plus10470, Plus10470>>> <<<Parameter229, 0_WU>>> <<<Reshape10633_Output_0, Reshape10633_Output_0>>> <<<Dropout11231_Output_0, Dropout11231_Output_0>>> <<<Minus10360_Output_0, Minus10360_Output_0>>> <<<Plus11237_Output_0, Plus11237_Output_0>>> <<<ElementTimes10362_Output_0, ElementTimes10362_Output_0>>> <<<Times11235_Output_0, Times11235_Output_0>>> <<<onnx12598, Select10653_one>>> <<<Parameter1813, W>>> <<<Minus10475_Output_0, Minus10475_Output_0>>> <<<Minus10315, Minus10315>>> <<<Splice11229_Output_0, Splice11229_Output_0>>> <<<OptimizedRNNStack11203_Output_0, model_rnn1_Output>>> <<<Splice10893_Output_0, Splice10893_Output_0>>> <<<Times10346_Output_0, 1_T_Output>>> <<<ReLU10357_Output_0, ReLU10357_Output_0>>> <<<Dropout10390_Output_0, Dropout10390_Output_0>>> <<<Convolution10253, Convolution10253>>> <<<OptimizedRNNStack10398_Output_0, input_rnn_Output>>> <<<Splice10296_Output_0, splice_embed_Output>>> <<<Reshape10293_Output_0, Reshape10293_Output_0>>> <<<Convolution10413, Convolution10413>>> <<<Block10286_Output_0, Block10286_Output_0>>> <<<ReLU10257_Output_0, ReLU10257_Output_0>>> <<<Plus10255_Output_0, Plus10255_Output_0>>> <<<Block10286, Block10286>>> <<<Block10596, Block10596>>> <<<Convolution10253_Output_0, Convolution10253_Output_0>>> <<<onnx12541, Parameter576_W_0_0>>> <<<ReLU10312_Output_0, ReLU10312_Output_0>>> <<<Dropout11183_Output_0, Dropout11183_Output_0>>> <<<Parameter1271, Parameter1271>>> <<<Parameter41, W_0>>> <<<Reshape10698, Reshape10698>>> <<<Reshape10453_Output_0, Reshape10453_Output_0>>> <<<ElementTimes10317, ElementTimes10317>>> <<<Splice11576, Splice11576>>> <<<Plus10310_Output_0, Plus10310_Output_0>>> <<<Dropout10243_Output_0, Dropout10243_Output_0>>> <<<Plus10479, Plus10479>>> <<<Plus10348_Output_0, Plus10348_Output_0>>> <<<onnx12658, OptimizedRNNStack11203_Output_0_0>>> <<<Plus10310, Plus10310>>> <<<Dropout10243, Dropout10243>>> <<<Block10711, Block10711>>> <<<Parameter42, b>>> <<<onnx12647, Parameter1706_B_0>>> <<<Parameter273, 1_bT>>> <<<Plus10255, Plus10255>>> <<<Log11740, Log11740>>> <<<Times10308_Output_0, 0_U_Output>>> <<<ReLU10257, ReLU10257>>> <<<Reshape10293, Reshape10293>>> <<<Parameter1268, Parameter1268>>> <<<Times10301_Output_0, 0_T_Output>>> <<<Splice10296, splice_embed>>> <<<Reshape10698_Output_0, Reshape10698_Output_0>>> <<<ElementTimes10317_Output_0, ElementTimes10317_Output_0>>> <<<StableSigmoid10305_Output_0, StableSigmoid10305_Output_0>>> <<<ReLU10357, ReLU10357>>> <<<Times10346, 1_T>>> <<<Dropout10390, Dropout10390>>> <<<Plus10303_Output_0, Plus10303_Output_0>>> <<<Parameter227, 0_WT>>> <<<Parameter228, 0_bT>>> <<<Plus10303, Plus10303>>> <<<StableSigmoid10305, StableSigmoid10305>>> <<<Minus10315_Output_0, Minus10315_Output_0>>> <<<Parameter274, 1_WU>>> <<<Times10308, 0_U>>> <<<Parameter230, 0_bU>>> <<<ReLU10312, ReLU10312>>> <<<StableSigmoid10350_Output_0, StableSigmoid10350_Output_0>>> <<<Times10353_Output_0, 1_U_Output>>> <<<onnx12646, Parameter1706_R_0>>> <<<Parameter272, 1_WT>>> <<<Plus10348, Plus10348>>> <<<StableSigmoid10350, StableSigmoid10350>>> <<<Times10353, 1_U>>> <<<Parameter275, 1_bU>>> <<<Plus10355, Plus10355>>> <<<Minus10360, Minus10360>>> <<<ElementTimes10362, ElementTimes10362>>> <<<ElementTimes10861, ElementTimes10861>>> <<<Plus10364, Plus10364>>> <<<onnx12477, Parameter576_W_0>>> <<<onnx12478, Parameter576_R_0>>> <<<onnx12479, Parameter576_B_0>>> <<<onnx12480, OptimizedRNNStack10398_Output_0_0>>> <<<onnx12481, OptimizedRNNStack103980>>> <<<Block10691_Output_0, Block10691_Output_0>>> <<<ElementTimes10672_Output_0, ElementTimes10672_Output_0>>> <<<Block10667_Output_0, Block10667_Output_0>>> <<<UnpackSequenceOp10564_Output_0, UnpackSequenceOp10564_Output_0>>> <<<OptimizedRNNStack10558_Output_0, input_rnn_Output_0>>> <<<Plus10524_Output_0, Plus10524_Output_0>>> <<<Plus10479_Output_0, Plus10479_Output_0>>> <<<Splice10456_Output_0, splice_embed_Output_0>>> <<<Block10446_Output_0, Block10446_Output_0>>> <<<ReLU10417_Output_0, ReLU10417_Output_0>>> <<<Plus10415_Output_0, Plus10415_Output_0>>> <<<Convolution10413_Output_0, Convolution10413_Output_0>>> <<<Dropout10403_Output_0, Dropout10403_Output_0>>> <<<Dropout10403, Dropout10403>>> <<<Plus10415, Plus10415>>> <<<ReLU10472_Output_0, ReLU10472_Output_0>>> <<<ReLU10417, ReLU10417>>> <<<Block10446, Block10446>>> <<<Reshape10453, Reshape10453>>> <<<Splice10456, splice_embed_0>>> <<<ElementTimes10477_Output_0, ElementTimes10477_Output_0>>> <<<StableSigmoid10465_Output_0, StableSigmoid10465_Output_0>>> <<<Plus10463_Output_0, Plus10463_Output_0>>> <<<Block10667, Block10667>>> <<<Times10461_Output_0, 0_T_Output_0>>> <<<Times10461, 0_T_0>>> <<<Plus10463, Plus10463>>> <<<Times10506_Output_0, 1_T_Output_0>>> <<<StableSigmoid10465, StableSigmoid10465>>> <<<onnx12696, Parameter1998_B_0>>> <<<Plus10470_Output_0, Plus10470_Output_0>>> <<<Plus11237, Plus11237>>> <<<Times10468_Output_0, 0_U_Output_0>>> <<<Times10468, 0_U_0>>> <<<ReLU10472, ReLU10472>>> <<<Minus10475, Minus10475>>> <<<onnx12597, Select10653_one_out>>> <<<ElementTimes10477, ElementTimes10477>>> <<<ElementTimes10522_Output_0, ElementTimes10522_Output_0>>> <<<StableSigmoid10510_Output_0, StableSigmoid10510_Output_0>>> <<<Select10653, Select10653>>> <<<Plus10508_Output_0, Plus10508_Output_0>>> <<<Times10506, 1_T_0>>> <<<Plus10508, Plus10508>>> <<<StableSigmoid10510, StableSigmoid10510>>> <<<Minus10520_Output_0, Minus10520_Output_0>>> <<<ReLU10517_Output_0, ReLU10517_Output_0>>> <<<Dropout11183, Dropout11183>>> <<<Plus10515_Output_0, Plus10515_Output_0>>> <<<Times10513_Output_0, 1_U_Output_0>>> <<<Times10513, 1_U_0>>> <<<Plus10515, Plus10515>>> <<<ReLU10517, ReLU10517>>> <<<ElementTimes10891_Output_0, ElementTimes10891_Output_0>>> <<<Minus10520, Minus10520>>> <<<ElementTimes10522, ElementTimes10522>>> <<<Plus10524, Plus10524>>> <<<Dropout10550_Output_0, Dropout10550_Output_0>>> <<<Dropout10550, Dropout10550>>> <<<Splice11229, Splice11229>>> <<<onnx12542, Parameter576_R_0_0>>> <<<onnx12543, Parameter576_B_0_0>>> <<<onnx12544, OptimizedRNNStack10558_Output_0_0>>> <<<onnx12545, OptimizedRNNStack105580>>> <<<Dropout11578, Dropout11578>>> <<<Placeholder12133, input_rnn>>> <<<Block10644, Block10644>>> <<<UnpackSequenceOp10564_Output_1, UnpackSequenceOp10564_Output_1>>> <<<UnpackSequenceOp10564, UnpackSequenceOp10564>>> <<<Reshape10657_Output_0, Reshape10657_Output_0>>> <<<Dropout11195, Dropout11195>>> <<<Softmax10655_Output_0, Softmax10655_Output_0>>> <<<onnx12698, OptimizedRNNStack115740>>> <<<Softmax10655, Softmax10655>>> <<<Select10653_Output_0, Select10653_Output_0>>> <<<Block10576_Output_0, Block10576_Output_0>>> <<<Block10576, Block10576>>> <<<Plus10651_Output_0, Plus10651_Output_0>>> <<<ElementTimes10891, ElementTimes10891>>> <<<Plus10649_Output_0, Plus10649_Output_0>>> <<<Plus10629_Output_0, Plus10629_Output_0>>> <<<Parameter1814, b_0>>> <<<Splice10893, Splice10893>>> <<<Times10582_Output_0, Times10582_Output_0>>> <<<Times10582, Times10582>>> <<<Reshape10627_Output_0, Reshape10627_Output_0>>> <<<Block10620_Output_0, Block10620_Output_0>>> <<<ElementTimes10601_Output_0, ElementTimes10601_Output_0>>> <<<onnx12556, input_rnn_Output_reshaped_for_broadcast>>> <<<Block10596_Output_0, Block10596_Output_0>>> <<<ElementTimes10585_Output_0, ElementTimes10585_Output_0>>> <<<Parameter1270, Parameter1270>>> <<<ElementTimes10585, ElementTimes10585>>> <<<ElementTimes10601, ElementTimes10601>>> <<<OptimizedRNNStack11574_Output_0, output_rnn_Output>>> <<<Block10620, Block10620>>> <<<Reshape10627, Reshape10627>>> <<<Plus10629, Plus10629>>> <<<Block10644_Output_0, Block10644_Output_0>>> <<<Plus11584_Output_0, Plus11584_Output_0>>> <<<Times10631_Output_0, Times10631_Output_0>>> <<<Block10827, Block10827>>> <<<Parameter1269, Parameter1269>>> <<<Dropout11231, Dropout11231>>> <<<Reshape10633, Reshape10633>>> <<<Plus10649, Plus10649>>> <<<Plus10651, Plus10651>>> <<<Constant1352, Constant1352>>> <<<onnx12589, Select10653_abs_out>>> <<<onnx12590, Select10653_abs>>> <<<onnx12591, Select10653_clip_out>>> <<<onnx12592, Select10653_clip>>> <<<onnx12593, Select10653_ceil_out>>> <<<onnx12594, Select10653_ceil>>> <<<onnx12595, Select10653_mul_true_out>>> <<<onnx12596, Select10653_mul_true>>> <<<onnx12599, Select10653_one_sub_out>>> <<<onnx12600, Select10653_sub_one>>> <<<onnx12601, Select10653_mul_false_out>>> <<<onnx12602, Select10653_mul_false>>> <<<onnx12603, Select10653_sum>>> <<<Reshape10657, Reshape10657>>> <<<ElementTimes10672, ElementTimes10672>>> <<<Block10691, Block10691>>> <<<ElementTimes10701_Output_0, ElementTimes10701_Output_0>>> <<<ElementTimes10701, ElementTimes10701>>> <<<Block10886_Output_0, Block10886_Output_0>>> <<<Block10872_Output_0, Block10872_Output_0>>> <<<Block10827_Output_0, Block10827_Output_0>>> <<<Block10711_Output_0, Block10711_Output_0>>> <<<onnx12629, Block10827_Output_0_reshaped_for_broadcast>>> <<<Block10886, Block10886>>> <<<onnx12645, Parameter1706_W_0>>> <<<onnx12648, OptimizedRNNStack11191_Output_0_0>>> <<<onnx12649, OptimizedRNNStack111910>>> <<<Block11507, Block11507>>> <<<Dropout11195_Output_0, Dropout11195_Output_0>>> <<<onnx12655, Parameter1717_W_0>>> <<<onnx12656, Parameter1717_R_0>>> <<<onnx12657, Parameter1717_B_0>>> <<<onnx12659, OptimizedRNNStack112030>>> <<<Times11235, Times11235>>> <<<Times11582_Output_0, Times11582_Output_0>>> <<<Log11393_Output_0, Log11393_Output_0>>> <<<Times11582, Times11582>>> <<<Log11393, Log11393>>> <<<Block11706_Output_0, Block11706_Output_0>>> <<<Block11706, Block11706>>> <<<onnx12694, Parameter1998_W_0>>> <<<Parameter2002, W_1>>> <<<Dropout11578_Output_0, Dropout11578_Output_0>>> <<<Splice11576_Output_0, Splice11576_Output_0>>> <<<Block11565_Output_0, Block11565_Output_0>>> <<<Block11552_Output_0, Block11552_Output_0>>> <<<ElementTimes11541_Output_0, ElementTimes11541_Output_0>>> <<<Block11507_Output_0, Block11507_Output_0>>> <<<ElementTimes11541, ElementTimes11541>>> <<<Block11565, Block11565>>> <<<ElementTimes11570_Output_0, ElementTimes11570_Output_0>>> <<<ElementTimes11570, ElementTimes11570>>> <<<Splice11572_Output_0, Splice11572_Output_0>>> <<<Splice11572, Splice11572>>> <<<Parameter2003, b_1>>> <<<onnx12695, Parameter1998_R_0>>> <<<onnx12697, OptimizedRNNStack11574_Output_0_0>>> <<<Log11740_Output_0, Log11740_Output_0>>> 
+graph.input: context_word context_char query_word query_char Word_Embedding Char_Embedding __OneFloat __ZeroFloat __ZeroFloat_Batch __NegINF_Batch _Const_0 
+graph.output: start_pos end_pos 
+graph.value_info: CategoryMapper_4 CategoryMapper_5 CategoryMapper_6 CategoryMapper_7 embedded_cgw embedded_cc embedded_qgw embedded_qc Dropout10403_Output_0 Squeeze_0 Convolution10413_Output_0Convolution10413_Output_0 Convolution10413_Output_0 Plus10415_Output_0 ReLU10417_Output_0 Block10446_Output_0 Reshape10453_Output_0 splice_embed_Output_0 0_U_Output_0 Plus10470_Output_0 ReLU10472_Output_0 Minus10475_Output_0 0_T_Output_0 Plus10463_Output_0 StableSigmoid10465_Output_0 ElementTimes10477_Output_0 Plus10479_Output_0 1_U_Output_0 Plus10515_Output_0 ReLU10517_Output_0 Minus10520_Output_0 1_T_Output_0 Plus10508_Output_0 StableSigmoid10510_Output_0 ElementTimes10522_Output_0 Plus10524_Output_0 Dropout10550_Output_0 OptimizedRNNStack10558_Output_0_0 OptimizedRNNStack10558_Output_0_0_transpose_out input_rnn_Output_0 UnpackSequenceOp10564_Output_0 UnpackSequenceOp10564_slice UnpackSequenceOp10564_squeeze UnpackSequenceOp10564_shape UnpackSequenceOp10564_Output_1 Block10576_input_unsqueeze_output Dropout10243_Output_0 Squeeze_2 Convolution10253_Output_0Convolution10253_Output_0 Convolution10253_Output_0 Plus10255_Output_0 ReLU10257_Output_0 Block10286_Output_0 Reshape10293_Output_0 splice_embed_Output 0_U_Output Plus10310_Output_0 ReLU10312_Output_0 Minus10315_Output_0 0_T_Output Plus10303_Output_0 StableSigmoid10305_Output_0 ElementTimes10317_Output_0 Plus10319_Output_0 1_U_Output Plus10355_Output_0 ReLU10357_Output_0 Minus10360_Output_0 1_T_Output Plus10348_Output_0 StableSigmoid10350_Output_0 ElementTimes10362_Output_0 Plus10364_Output_0 Dropout10390_Output_0 OptimizedRNNStack10398_Output_0_0 OptimizedRNNStack10398_Output_0_0_transpose_out input_rnn_Output Block10576_squeezed_slice Block10576_squeezed_squeeze Block10576_squeezed_shape Block10576_squeezed_output Block10576_input_unsqueeze_broadcast_as_unsqueeze_output Block10576_Output_0 Select10653_abs_out Select10653_clip_out Select10653_ceil_out Select10653_one_sub_out Select10653_mul_false_out Times10631_Output_0 Reshape10633_Output_0 Block10644_input_unsqueeze_output Block10644_squeezed_slice Block10644_squeezed_squeeze Block10644_squeezed_shape Block10644_squeezed_output Block10644_input_unsqueeze_broadcast_as_unsqueeze_output Block10644_Output_0 ElementTimes10585_Output_0 Block10596_input_unsqueeze_output Block10596_squeezed_slice Block10596_squeezed_squeeze Block10596_squeezed_shape Block10596_squeezed_output Block10596_input_unsqueeze_broadcast_as_unsqueeze_output Block10596_Output_0 input_rnn_Output_reshaped_for_broadcast ElementTimes10601_Output_0 Block10620_Output_0 Reshape10627_Output_0 Times10582_Output_0 Plus10629_Output_0 Plus10649_Output_0 Plus10651_Output_0 Select10653_mul_true_out Select10653_Output_0 Block10711_Output_0 Block10827_preTranspose_output_0 Block10827_postTranspose_input Block10827_Output_0 Block10827_Output_0_reshaped_for_broadcast ElementTimes10861_Output_0 Block10872_Output_0 Block10886_input_unsqueeze_output Block10886_squeezed_slice Block10886_squeezed_squeeze Block10886_squeezed_shape Block10886_squeezed_output Block10886_input_unsqueeze_broadcast_as_unsqueeze_output Block10886_Output_0 ElementTimes10891_Output_0 Block10667_input_unsqueeze_output Softmax10655_Output_0 Reshape10657_Output_0 Block10667_squeezed_slice Block10667_squeezed_squeeze Block10667_squeezed_shape Block10667_squeezed_output Block10667_input_unsqueeze_broadcast_as_unsqueeze_output Block10667_Output_0 ElementTimes10672_Output_0 Block10691_Output_0 Reshape10698_Output_0 ElementTimes10701_Output_0 Splice10893_Output_0 Dropout11183_Output_0 OptimizedRNNStack11191_Output_0_0 OptimizedRNNStack11191_Output_0_0_transpose_out model_rnn0_Output Dropout11195_Output_0 OptimizedRNNStack11203_Output_0_0 OptimizedRNNStack11203_Output_0_0_transpose_out model_rnn1_Output Splice11229_Output_0 Dropout11231_Output_0 Times11235_Output_0 Plus11237_Output_0 Block11507_preTranspose_output_0 Block11507_postTranspose_input Block11507_Output_0 ElementTimes11541_Output_0 Block11552_Output_0 Block11565_input_unsqueeze_output Block11565_squeezed_slice Block11565_squeezed_squeeze Block11565_squeezed_shape Block11565_squeezed_output Block11565_input_unsqueeze_broadcast_as_unsqueeze_output Block11565_Output_0 ElementTimes11570_Output_0 Splice11572_Output_0 OptimizedRNNStack11574_Output_0_0 OptimizedRNNStack11574_Output_0_0_transpose_out output_rnn_Output Splice11576_Output_0 Dropout11578_Output_0 Times11582_Output_0 Plus11584_Output_0 Block11706_preTranspose_output_0 Block11706_postTranspose_input Block11706_Output_0 Log11740_Output_0 Block11359_preTranspose_output_0 Block11359_postTranspose_input Block11359_Output_0 Log11393_Output_0 start_max__v start_max__i start_max__counter start_max_value start_max_index Add_21 Squeeze_22 ArgMax_23 end_pos Transpose_25 Hardmax_26 Cast_27 Squeeze_28 Transpose_29 Reshape_30 Compress_31 
+graph.initializer: W W_0 b Reshape10293_Output_0_shape 0_WT 0_bT 0_WU 0_bU 1_WT 1_bT 1_WU 1_bU Parameter576_W_0 Parameter576_R_0 Parameter576_B_0 input_rnn_Output_shape Reshape10453_Output_0_shape Parameter576_W_0_0 Parameter576_R_0_0 Parameter576_B_0_0 input_rnn_Output_0_shape Parameter1268 input_rnn_Output_reshaped_for_broadcast_shape Parameter1270 Reshape10627_Output_0_shape Parameter1269 Reshape10633_Output_0_shape Parameter1271 Constant1352 Reshape10657_Output_0_shape Reshape10698_Output_0_shape Block10827_Output_0_reshaped_for_broadcast_shape Parameter1706_W_0 Parameter1706_R_0 Parameter1706_B_0 model_rnn0_Output_shape Parameter1717_W_0 Parameter1717_R_0 Parameter1717_B_0 model_rnn1_Output_shape b_0 W_1 Parameter1998_W_0 Parameter1998_R_0 Parameter1998_B_0 output_rnn_Output_shape b_1 Word_Embedding Char_Embedding __OneFloat __ZeroFloat __ZeroFloat_Batch __NegINF_Batch _Const_0 Select10653_one_out 
+
+***************** nodes *****************
+graph.node_size: 197
+{
+  op_type: CategoryMapper
+  input:   context_word 
+  output:  CategoryMapper_4 
+  attribute: {
+	       cats_int64s :
+	       cats_strings :
+	       default_int64 :
+	     }
+}
+{
+  op_type: CategoryMapper
+  input:   context_char 
+  output:  CategoryMapper_5 
+  attribute: {
+	       cats_int64s :
+	       cats_strings :
+	       default_int64 :
+	     }
+}
+{
+  op_type: CategoryMapper
+  input:   query_word 
+  output:  CategoryMapper_6 
+  attribute: {
+	       cats_int64s :
+	       cats_strings :
+	       default_int64 :
+	     }
+}
+{
+  op_type: CategoryMapper
+  input:   query_char 
+  output:  CategoryMapper_7 
+  attribute: {
+	       cats_int64s :
+	       cats_strings :
+	       default_int64 :
+	     }
+}
+{
+  op_type: Gather
+  input:   Word_Embedding CategoryMapper_4 
+  output:  embedded_cgw 
+  attribute: {
+	       axis :
+	     }
+}
+{
+  op_type: Gather
+  input:   Char_Embedding CategoryMapper_5 
+  output:  embedded_cc 
+  attribute: {
+	       axis :
+	     }
+}
+{
+  op_type: Gather
+  input:   Word_Embedding CategoryMapper_6 
+  output:  embedded_qgw 
+  attribute: {
+	       axis :
+	     }
+}
+{
+  op_type: Gather
+  input:   Char_Embedding CategoryMapper_7 
+  output:  embedded_qc 
+  attribute: {
+	       axis :
+	     }
+}
+{
+  op_type: Dropout
+  input:   embedded_qc 
+  output:  Dropout10403_Output_0 
+  attribute: {
+	       ratio :
+	     }
+}
+{
+  op_type: Squeeze
+  input:   Dropout10403_Output_0 
+  output:  Squeeze_0 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Conv
+  input:   Squeeze_0 W_0 
+  output:  Convolution10413_Output_0Convolution10413_Output_0 
+  attribute: {
+	       kernel_shape :
+	       strides :
+	       auto_pad :
+	       group :
+	       dilations :
+	       pads :
+	     }
+}
+{
+  op_type: Unsqueeze
+  input:   Convolution10413_Output_0Convolution10413_Output_0 
+  output:  Convolution10413_Output_0 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Add
+  input:   Convolution10413_Output_0 b 
+  output:  Plus10415_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Relu
+  input:   Plus10415_Output_0 
+  output:  ReLU10417_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: ReduceMax
+  input:   ReLU10417_Output_0 
+  output:  Block10446_Output_0 
+  attribute: {
+	       axes :
+	       keepdims :
+	     }
+}
+{
+  op_type: Reshape
+  input:   Block10446_Output_0 Reshape10453_Output_0_shape 
+  output:  Reshape10453_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Concat
+  input:   Reshape10453_Output_0 embedded_qgw 
+  output:  splice_embed_Output_0 
+  attribute: {
+	       axis :
+	     }
+}
+{
+  op_type: MatMul
+  input:   splice_embed_Output_0 0_WU 
+  output:  0_U_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Add
+  input:   0_U_Output_0 0_bU 
+  output:  Plus10470_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Relu
+  input:   Plus10470_Output_0 
+  output:  ReLU10472_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Sub
+  input:   ReLU10472_Output_0 splice_embed_Output_0 
+  output:  Minus10475_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: MatMul
+  input:   splice_embed_Output_0 0_WT 
+  output:  0_T_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Add
+  input:   0_T_Output_0 0_bT 
+  output:  Plus10463_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Sigmoid
+  input:   Plus10463_Output_0 
+  output:  StableSigmoid10465_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Mul
+  input:   StableSigmoid10465_Output_0 Minus10475_Output_0 
+  output:  ElementTimes10477_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Add
+  input:   splice_embed_Output_0 ElementTimes10477_Output_0 
+  output:  Plus10479_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: MatMul
+  input:   Plus10479_Output_0 1_WU 
+  output:  1_U_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Add
+  input:   1_U_Output_0 1_bU 
+  output:  Plus10515_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Relu
+  input:   Plus10515_Output_0 
+  output:  ReLU10517_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Sub
+  input:   ReLU10517_Output_0 Plus10479_Output_0 
+  output:  Minus10520_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: MatMul
+  input:   Plus10479_Output_0 1_WT 
+  output:  1_T_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Add
+  input:   1_T_Output_0 1_bT 
+  output:  Plus10508_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Sigmoid
+  input:   Plus10508_Output_0 
+  output:  StableSigmoid10510_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Mul
+  input:   StableSigmoid10510_Output_0 Minus10520_Output_0 
+  output:  ElementTimes10522_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Add
+  input:   Plus10479_Output_0 ElementTimes10522_Output_0 
+  output:  Plus10524_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Dropout
+  input:   Plus10524_Output_0 
+  output:  Dropout10550_Output_0 
+  attribute: {
+	       ratio :
+	     }
+}
+{
+  op_type: LSTM
+  input:   Dropout10550_Output_0 Parameter576_W_0_0 Parameter576_R_0_0 Parameter576_B_0_0 
+  output:  OptimizedRNNStack10558_Output_0_0 
+  attribute: {
+	       direction :
+	       activations :
+	       hidden_size :
+	       input_forget :
+	     }
+}
+{
+  op_type: Transpose
+  input:   OptimizedRNNStack10558_Output_0_0 
+  output:  OptimizedRNNStack10558_Output_0_0_transpose_out 
+  attribute: {
+	       perm :
+	     }
+}
+{
+  op_type: Reshape
+  input:   OptimizedRNNStack10558_Output_0_0_transpose_out input_rnn_Output_0_shape 
+  output:  input_rnn_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Transpose
+  input:   input_rnn_Output_0 
+  output:  UnpackSequenceOp10564_Output_0 
+  attribute: {
+	       perm :
+	     }
+}
+{
+  op_type: Slice
+  input:   UnpackSequenceOp10564_Output_0 
+  output:  UnpackSequenceOp10564_slice 
+  attribute: {
+	       axes :
+	       starts :
+	       ends :
+	     }
+}
+{
+  op_type: Squeeze
+  input:   UnpackSequenceOp10564_slice 
+  output:  UnpackSequenceOp10564_squeeze 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Shape
+  input:   UnpackSequenceOp10564_squeeze 
+  output:  UnpackSequenceOp10564_shape 
+  attribute: {
+	     }
+}
+{
+  op_type: ConstantOfShape
+  input:   UnpackSequenceOp10564_shape 
+  output:  UnpackSequenceOp10564_Output_1 
+  attribute: {
+	       value :
+	     }
+}
+{
+  op_type: Unsqueeze
+  input:   UnpackSequenceOp10564_Output_1 
+  output:  Block10576_input_unsqueeze_output 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Dropout
+  input:   embedded_cc 
+  output:  Dropout10243_Output_0 
+  attribute: {
+	       ratio :
+	     }
+}
+{
+  op_type: Squeeze
+  input:   Dropout10243_Output_0 
+  output:  Squeeze_2 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Conv
+  input:   Squeeze_2 W_0 
+  output:  Convolution10253_Output_0Convolution10253_Output_0 
+  attribute: {
+	       kernel_shape :
+	       strides :
+	       auto_pad :
+	       group :
+	       dilations :
+	       pads :
+	     }
+}
+{
+  op_type: Unsqueeze
+  input:   Convolution10253_Output_0Convolution10253_Output_0 
+  output:  Convolution10253_Output_0 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Add
+  input:   Convolution10253_Output_0 b 
+  output:  Plus10255_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Relu
+  input:   Plus10255_Output_0 
+  output:  ReLU10257_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: ReduceMax
+  input:   ReLU10257_Output_0 
+  output:  Block10286_Output_0 
+  attribute: {
+	       axes :
+	       keepdims :
+	     }
+}
+{
+  op_type: Reshape
+  input:   Block10286_Output_0 Reshape10293_Output_0_shape 
+  output:  Reshape10293_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Concat
+  input:   Reshape10293_Output_0 embedded_cgw 
+  output:  splice_embed_Output 
+  attribute: {
+	       axis :
+	     }
+}
+{
+  op_type: MatMul
+  input:   splice_embed_Output 0_WU 
+  output:  0_U_Output 
+  attribute: {
+	     }
+}
+{
+  op_type: Add
+  input:   0_U_Output 0_bU 
+  output:  Plus10310_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Relu
+  input:   Plus10310_Output_0 
+  output:  ReLU10312_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Sub
+  input:   ReLU10312_Output_0 splice_embed_Output 
+  output:  Minus10315_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: MatMul
+  input:   splice_embed_Output 0_WT 
+  output:  0_T_Output 
+  attribute: {
+	     }
+}
+{
+  op_type: Add
+  input:   0_T_Output 0_bT 
+  output:  Plus10303_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Sigmoid
+  input:   Plus10303_Output_0 
+  output:  StableSigmoid10305_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Mul
+  input:   StableSigmoid10305_Output_0 Minus10315_Output_0 
+  output:  ElementTimes10317_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Add
+  input:   splice_embed_Output ElementTimes10317_Output_0 
+  output:  Plus10319_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: MatMul
+  input:   Plus10319_Output_0 1_WU 
+  output:  1_U_Output 
+  attribute: {
+	     }
+}
+{
+  op_type: Add
+  input:   1_U_Output 1_bU 
+  output:  Plus10355_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Relu
+  input:   Plus10355_Output_0 
+  output:  ReLU10357_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Sub
+  input:   ReLU10357_Output_0 Plus10319_Output_0 
+  output:  Minus10360_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: MatMul
+  input:   Plus10319_Output_0 1_WT 
+  output:  1_T_Output 
+  attribute: {
+	     }
+}
+{
+  op_type: Add
+  input:   1_T_Output 1_bT 
+  output:  Plus10348_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Sigmoid
+  input:   Plus10348_Output_0 
+  output:  StableSigmoid10350_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Mul
+  input:   StableSigmoid10350_Output_0 Minus10360_Output_0 
+  output:  ElementTimes10362_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Add
+  input:   Plus10319_Output_0 ElementTimes10362_Output_0 
+  output:  Plus10364_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Dropout
+  input:   Plus10364_Output_0 
+  output:  Dropout10390_Output_0 
+  attribute: {
+	       ratio :
+	     }
+}
+{
+  op_type: LSTM
+  input:   Dropout10390_Output_0 Parameter576_W_0 Parameter576_R_0 Parameter576_B_0 
+  output:  OptimizedRNNStack10398_Output_0_0 
+  attribute: {
+	       direction :
+	       activations :
+	       hidden_size :
+	       input_forget :
+	     }
+}
+{
+  op_type: Transpose
+  input:   OptimizedRNNStack10398_Output_0_0 
+  output:  OptimizedRNNStack10398_Output_0_0_transpose_out 
+  attribute: {
+	       perm :
+	     }
+}
+{
+  op_type: Reshape
+  input:   OptimizedRNNStack10398_Output_0_0_transpose_out input_rnn_Output_shape 
+  output:  input_rnn_Output 
+  attribute: {
+	     }
+}
+{
+  op_type: Slice
+  input:   input_rnn_Output 
+  output:  Block10576_squeezed_slice 
+  attribute: {
+	       axes :
+	       starts :
+	       ends :
+	     }
+}
+{
+  op_type: Squeeze
+  input:   Block10576_squeezed_slice 
+  output:  Block10576_squeezed_squeeze 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Shape
+  input:   Block10576_squeezed_squeeze 
+  output:  Block10576_squeezed_shape 
+  attribute: {
+	     }
+}
+{
+  op_type: ConstantOfShape
+  input:   Block10576_squeezed_shape 
+  output:  Block10576_squeezed_output 
+  attribute: {
+	       value :
+	     }
+}
+{
+  op_type: Unsqueeze
+  input:   Block10576_squeezed_output 
+  output:  Block10576_input_unsqueeze_broadcast_as_unsqueeze_output 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Add
+  input:   Block10576_input_unsqueeze_output Block10576_input_unsqueeze_broadcast_as_unsqueeze_output 
+  output:  Block10576_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Abs
+  input:   Block10576_Output_0 
+  output:  Select10653_abs_out 
+  attribute: {
+	     }
+}
+{
+  op_type: Clip
+  input:   Select10653_abs_out 
+  output:  Select10653_clip_out 
+  attribute: {
+	       min :
+	       max :
+	     }
+}
+{
+  op_type: Ceil
+  input:   Select10653_clip_out 
+  output:  Select10653_ceil_out 
+  attribute: {
+	     }
+}
+{
+  op_type: Sub
+  input:   Select10653_one_out Select10653_ceil_out 
+  output:  Select10653_one_sub_out 
+  attribute: {
+	     }
+}
+{
+  op_type: Mul
+  input:   Select10653_one_sub_out Constant1352 
+  output:  Select10653_mul_false_out 
+  attribute: {
+	     }
+}
+{
+  op_type: MatMul
+  input:   UnpackSequenceOp10564_Output_0 Parameter1269 
+  output:  Times10631_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Reshape
+  input:   Times10631_Output_0 Reshape10633_Output_0_shape 
+  output:  Reshape10633_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Unsqueeze
+  input:   Reshape10633_Output_0 
+  output:  Block10644_input_unsqueeze_output 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Slice
+  input:   input_rnn_Output 
+  output:  Block10644_squeezed_slice 
+  attribute: {
+	       axes :
+	       starts :
+	       ends :
+	     }
+}
+{
+  op_type: Squeeze
+  input:   Block10644_squeezed_slice 
+  output:  Block10644_squeezed_squeeze 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Shape
+  input:   Block10644_squeezed_squeeze 
+  output:  Block10644_squeezed_shape 
+  attribute: {
+	     }
+}
+{
+  op_type: ConstantOfShape
+  input:   Block10644_squeezed_shape 
+  output:  Block10644_squeezed_output 
+  attribute: {
+	       value :
+	     }
+}
+{
+  op_type: Unsqueeze
+  input:   Block10644_squeezed_output 
+  output:  Block10644_input_unsqueeze_broadcast_as_unsqueeze_output 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Add
+  input:   Block10644_input_unsqueeze_output Block10644_input_unsqueeze_broadcast_as_unsqueeze_output 
+  output:  Block10644_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Mul
+  input:   UnpackSequenceOp10564_Output_0 Parameter1270 
+  output:  ElementTimes10585_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Unsqueeze
+  input:   ElementTimes10585_Output_0 
+  output:  Block10596_input_unsqueeze_output 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Slice
+  input:   input_rnn_Output 
+  output:  Block10596_squeezed_slice 
+  attribute: {
+	       axes :
+	       starts :
+	       ends :
+	     }
+}
+{
+  op_type: Squeeze
+  input:   Block10596_squeezed_slice 
+  output:  Block10596_squeezed_squeeze 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Shape
+  input:   Block10596_squeezed_squeeze 
+  output:  Block10596_squeezed_shape 
+  attribute: {
+	     }
+}
+{
+  op_type: ConstantOfShape
+  input:   Block10596_squeezed_shape 
+  output:  Block10596_squeezed_output 
+  attribute: {
+	       value :
+	     }
+}
+{
+  op_type: Unsqueeze
+  input:   Block10596_squeezed_output 
+  output:  Block10596_input_unsqueeze_broadcast_as_unsqueeze_output 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Add
+  input:   Block10596_input_unsqueeze_output Block10596_input_unsqueeze_broadcast_as_unsqueeze_output 
+  output:  Block10596_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Reshape
+  input:   input_rnn_Output input_rnn_Output_reshaped_for_broadcast_shape 
+  output:  input_rnn_Output_reshaped_for_broadcast 
+  attribute: {
+	     }
+}
+{
+  op_type: Mul
+  input:   input_rnn_Output_reshaped_for_broadcast Block10596_Output_0 
+  output:  ElementTimes10601_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: ReduceSum
+  input:   ElementTimes10601_Output_0 
+  output:  Block10620_Output_0 
+  attribute: {
+	       axes :
+	       keepdims :
+	     }
+}
+{
+  op_type: Reshape
+  input:   Block10620_Output_0 Reshape10627_Output_0_shape 
+  output:  Reshape10627_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: MatMul
+  input:   input_rnn_Output Parameter1268 
+  output:  Times10582_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Add
+  input:   Times10582_Output_0 Reshape10627_Output_0 
+  output:  Plus10629_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Add
+  input:   Plus10629_Output_0 Block10644_Output_0 
+  output:  Plus10649_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Add
+  input:   Plus10649_Output_0 Parameter1271 
+  output:  Plus10651_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Mul
+  input:   Select10653_ceil_out Plus10651_Output_0 
+  output:  Select10653_mul_true_out 
+  attribute: {
+	     }
+}
+{
+  op_type: Sum
+  input:   Select10653_mul_true_out Select10653_mul_false_out 
+  output:  Select10653_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: ReduceMax
+  input:   Select10653_Output_0 
+  output:  Block10711_Output_0 
+  attribute: {
+	       axes :
+	       keepdims :
+	     }
+}
+{
+  op_type: Transpose
+  input:   Block10711_Output_0 
+  output:  Block10827_preTranspose_output_0 
+  attribute: {
+	       perm :
+	     }
+}
+{
+  op_type: Softmax
+  input:   Block10827_preTranspose_output_0 
+  output:  Block10827_postTranspose_input 
+  attribute: {
+	       axis :
+	     }
+}
+{
+  op_type: Transpose
+  input:   Block10827_postTranspose_input 
+  output:  Block10827_Output_0 
+  attribute: {
+	       perm :
+	     }
+}
+{
+  op_type: Reshape
+  input:   Block10827_Output_0 Block10827_Output_0_reshaped_for_broadcast_shape 
+  output:  Block10827_Output_0_reshaped_for_broadcast 
+  attribute: {
+	     }
+}
+{
+  op_type: Mul
+  input:   input_rnn_Output Block10827_Output_0_reshaped_for_broadcast 
+  output:  ElementTimes10861_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: ReduceSum
+  input:   ElementTimes10861_Output_0 
+  output:  Block10872_Output_0 
+  attribute: {
+	       axes :
+	       keepdims :
+	     }
+}
+{
+  op_type: Unsqueeze
+  input:   Block10872_Output_0 
+  output:  Block10886_input_unsqueeze_output 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Slice
+  input:   input_rnn_Output 
+  output:  Block10886_squeezed_slice 
+  attribute: {
+	       axes :
+	       starts :
+	       ends :
+	     }
+}
+{
+  op_type: Squeeze
+  input:   Block10886_squeezed_slice 
+  output:  Block10886_squeezed_squeeze 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Shape
+  input:   Block10886_squeezed_squeeze 
+  output:  Block10886_squeezed_shape 
+  attribute: {
+	     }
+}
+{
+  op_type: ConstantOfShape
+  input:   Block10886_squeezed_shape 
+  output:  Block10886_squeezed_output 
+  attribute: {
+	       value :
+	     }
+}
+{
+  op_type: Unsqueeze
+  input:   Block10886_squeezed_output 
+  output:  Block10886_input_unsqueeze_broadcast_as_unsqueeze_output 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Add
+  input:   Block10886_input_unsqueeze_output Block10886_input_unsqueeze_broadcast_as_unsqueeze_output 
+  output:  Block10886_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Mul
+  input:   input_rnn_Output Block10886_Output_0 
+  output:  ElementTimes10891_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Unsqueeze
+  input:   UnpackSequenceOp10564_Output_0 
+  output:  Block10667_input_unsqueeze_output 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Softmax
+  input:   Select10653_Output_0 
+  output:  Softmax10655_Output_0 
+  attribute: {
+	       axis :
+	     }
+}
+{
+  op_type: Reshape
+  input:   Softmax10655_Output_0 Reshape10657_Output_0_shape 
+  output:  Reshape10657_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Slice
+  input:   Reshape10657_Output_0 
+  output:  Block10667_squeezed_slice 
+  attribute: {
+	       axes :
+	       starts :
+	       ends :
+	     }
+}
+{
+  op_type: Squeeze
+  input:   Block10667_squeezed_slice 
+  output:  Block10667_squeezed_squeeze 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Shape
+  input:   Block10667_squeezed_squeeze 
+  output:  Block10667_squeezed_shape 
+  attribute: {
+	     }
+}
+{
+  op_type: ConstantOfShape
+  input:   Block10667_squeezed_shape 
+  output:  Block10667_squeezed_output 
+  attribute: {
+	       value :
+	     }
+}
+{
+  op_type: Unsqueeze
+  input:   Block10667_squeezed_output 
+  output:  Block10667_input_unsqueeze_broadcast_as_unsqueeze_output 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Add
+  input:   Block10667_input_unsqueeze_output Block10667_input_unsqueeze_broadcast_as_unsqueeze_output 
+  output:  Block10667_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Mul
+  input:   Block10667_Output_0 Reshape10657_Output_0 
+  output:  ElementTimes10672_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: ReduceSum
+  input:   ElementTimes10672_Output_0 
+  output:  Block10691_Output_0 
+  attribute: {
+	       axes :
+	       keepdims :
+	     }
+}
+{
+  op_type: Reshape
+  input:   Block10691_Output_0 Reshape10698_Output_0_shape 
+  output:  Reshape10698_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Mul
+  input:   input_rnn_Output Reshape10698_Output_0 
+  output:  ElementTimes10701_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Concat
+  input:   input_rnn_Output Reshape10698_Output_0 ElementTimes10701_Output_0 ElementTimes10891_Output_0 
+  output:  Splice10893_Output_0 
+  attribute: {
+	       axis :
+	     }
+}
+{
+  op_type: Dropout
+  input:   Splice10893_Output_0 
+  output:  Dropout11183_Output_0 
+  attribute: {
+	       ratio :
+	     }
+}
+{
+  op_type: LSTM
+  input:   Dropout11183_Output_0 Parameter1706_W_0 Parameter1706_R_0 Parameter1706_B_0 
+  output:  OptimizedRNNStack11191_Output_0_0 
+  attribute: {
+	       direction :
+	       activations :
+	       hidden_size :
+	       input_forget :
+	     }
+}
+{
+  op_type: Transpose
+  input:   OptimizedRNNStack11191_Output_0_0 
+  output:  OptimizedRNNStack11191_Output_0_0_transpose_out 
+  attribute: {
+	       perm :
+	     }
+}
+{
+  op_type: Reshape
+  input:   OptimizedRNNStack11191_Output_0_0_transpose_out model_rnn0_Output_shape 
+  output:  model_rnn0_Output 
+  attribute: {
+	     }
+}
+{
+  op_type: Dropout
+  input:   model_rnn0_Output 
+  output:  Dropout11195_Output_0 
+  attribute: {
+	       ratio :
+	     }
+}
+{
+  op_type: LSTM
+  input:   Dropout11195_Output_0 Parameter1717_W_0 Parameter1717_R_0 Parameter1717_B_0 
+  output:  OptimizedRNNStack11203_Output_0_0 
+  attribute: {
+	       direction :
+	       activations :
+	       hidden_size :
+	       input_forget :
+	     }
+}
+{
+  op_type: Transpose
+  input:   OptimizedRNNStack11203_Output_0_0 
+  output:  OptimizedRNNStack11203_Output_0_0_transpose_out 
+  attribute: {
+	       perm :
+	     }
+}
+{
+  op_type: Reshape
+  input:   OptimizedRNNStack11203_Output_0_0_transpose_out model_rnn1_Output_shape 
+  output:  model_rnn1_Output 
+  attribute: {
+	     }
+}
+{
+  op_type: Concat
+  input:   model_rnn1_Output Splice10893_Output_0 
+  output:  Splice11229_Output_0 
+  attribute: {
+	       axis :
+	     }
+}
+{
+  op_type: Dropout
+  input:   Splice11229_Output_0 
+  output:  Dropout11231_Output_0 
+  attribute: {
+	       ratio :
+	     }
+}
+{
+  op_type: MatMul
+  input:   Dropout11231_Output_0 W 
+  output:  Times11235_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Add
+  input:   Times11235_Output_0 b_0 
+  output:  Plus11237_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Transpose
+  input:   Plus11237_Output_0 
+  output:  Block11507_preTranspose_output_0 
+  attribute: {
+	       perm :
+	     }
+}
+{
+  op_type: Softmax
+  input:   Block11507_preTranspose_output_0 
+  output:  Block11507_postTranspose_input 
+  attribute: {
+	       axis :
+	     }
+}
+{
+  op_type: Transpose
+  input:   Block11507_postTranspose_input 
+  output:  Block11507_Output_0 
+  attribute: {
+	       perm :
+	     }
+}
+{
+  op_type: Mul
+  input:   model_rnn1_Output Block11507_Output_0 
+  output:  ElementTimes11541_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: ReduceSum
+  input:   ElementTimes11541_Output_0 
+  output:  Block11552_Output_0 
+  attribute: {
+	       axes :
+	       keepdims :
+	     }
+}
+{
+  op_type: Unsqueeze
+  input:   Block11552_Output_0 
+  output:  Block11565_input_unsqueeze_output 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Slice
+  input:   Splice10893_Output_0 
+  output:  Block11565_squeezed_slice 
+  attribute: {
+	       axes :
+	       starts :
+	       ends :
+	     }
+}
+{
+  op_type: Squeeze
+  input:   Block11565_squeezed_slice 
+  output:  Block11565_squeezed_squeeze 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Shape
+  input:   Block11565_squeezed_squeeze 
+  output:  Block11565_squeezed_shape 
+  attribute: {
+	     }
+}
+{
+  op_type: ConstantOfShape
+  input:   Block11565_squeezed_shape 
+  output:  Block11565_squeezed_output 
+  attribute: {
+	       value :
+	     }
+}
+{
+  op_type: Unsqueeze
+  input:   Block11565_squeezed_output 
+  output:  Block11565_input_unsqueeze_broadcast_as_unsqueeze_output 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Add
+  input:   Block11565_input_unsqueeze_output Block11565_input_unsqueeze_broadcast_as_unsqueeze_output 
+  output:  Block11565_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Mul
+  input:   model_rnn1_Output Block11565_Output_0 
+  output:  ElementTimes11570_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Concat
+  input:   Splice10893_Output_0 model_rnn1_Output Block11565_Output_0 ElementTimes11570_Output_0 
+  output:  Splice11572_Output_0 
+  attribute: {
+	       axis :
+	     }
+}
+{
+  op_type: LSTM
+  input:   Splice11572_Output_0 Parameter1998_W_0 Parameter1998_R_0 Parameter1998_B_0 
+  output:  OptimizedRNNStack11574_Output_0_0 
+  attribute: {
+	       direction :
+	       activations :
+	       hidden_size :
+	       input_forget :
+	     }
+}
+{
+  op_type: Transpose
+  input:   OptimizedRNNStack11574_Output_0_0 
+  output:  OptimizedRNNStack11574_Output_0_0_transpose_out 
+  attribute: {
+	       perm :
+	     }
+}
+{
+  op_type: Reshape
+  input:   OptimizedRNNStack11574_Output_0_0_transpose_out output_rnn_Output_shape 
+  output:  output_rnn_Output 
+  attribute: {
+	     }
+}
+{
+  op_type: Concat
+  input:   output_rnn_Output Splice10893_Output_0 
+  output:  Splice11576_Output_0 
+  attribute: {
+	       axis :
+	     }
+}
+{
+  op_type: Dropout
+  input:   Splice11576_Output_0 
+  output:  Dropout11578_Output_0 
+  attribute: {
+	       ratio :
+	     }
+}
+{
+  op_type: MatMul
+  input:   Dropout11578_Output_0 W_1 
+  output:  Times11582_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Add
+  input:   Times11582_Output_0 b_1 
+  output:  Plus11584_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Transpose
+  input:   Plus11584_Output_0 
+  output:  Block11706_preTranspose_output_0 
+  attribute: {
+	       perm :
+	     }
+}
+{
+  op_type: Softmax
+  input:   Block11706_preTranspose_output_0 
+  output:  Block11706_postTranspose_input 
+  attribute: {
+	       axis :
+	     }
+}
+{
+  op_type: Transpose
+  input:   Block11706_postTranspose_input 
+  output:  Block11706_Output_0 
+  attribute: {
+	       perm :
+	     }
+}
+{
+  op_type: Log
+  input:   Block11706_Output_0 
+  output:  Log11740_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Transpose
+  input:   Plus11237_Output_0 
+  output:  Block11359_preTranspose_output_0 
+  attribute: {
+	       perm :
+	     }
+}
+{
+  op_type: Softmax
+  input:   Block11359_preTranspose_output_0 
+  output:  Block11359_postTranspose_input 
+  attribute: {
+	       axis :
+	     }
+}
+{
+  op_type: Transpose
+  input:   Block11359_postTranspose_input 
+  output:  Block11359_Output_0 
+  attribute: {
+	       perm :
+	     }
+}
+{
+  op_type: Log
+  input:   Block11359_Output_0 
+  output:  Log11393_Output_0 
+  attribute: {
+	     }
+}
+{
+  op_type: Scan
+  input:   __NegINF_Batch __ZeroFloat_Batch __ZeroFloat Log11393_Output_0 
+  output:  start_max__v start_max__i start_max__counter start_max_value start_max_index 
+  attribute: {
+	       body :
+***************** graph *****************
+graph.name: start_max_subgraph
+graph.doc_string: 
+graph.input: start_max__v_subgraph start_max__i_subgraph start_max__counter_subgraph Log11393_Output_0_subgraph 
+graph.output: start_max__v start_max__i start_max__counter start_max_value start_max_index 
+graph.value_info: 
+graph.initializer: 
+
+***************** nodes *****************
+graph.node_size: 8
+{
+  op_type: Greater
+  input:   Log11393_Output_0_subgraph start_max__v_subgraph 
+  output:  start_max_Greater_12 
+  attribute: {
+	     }
+}
+{
+  op_type: Where
+  input:   start_max_Greater_12 Log11393_Output_0_subgraph start_max__v_subgraph 
+  output:  start_max_Where_13 
+  attribute: {
+	     }
+}
+{
+  op_type: Where
+  input:   start_max_Greater_12 start_max__counter_subgraph start_max__i_subgraph 
+  output:  start_max_Where_14 
+  attribute: {
+	     }
+}
+{
+  op_type: Add
+  input:   start_max__counter_subgraph __OneFloat 
+  output:  start_max__counter 
+  attribute: {
+	     }
+}
+{
+  op_type: Identity
+  input:   start_max_Where_13 
+  output:  start_max__v 
+  attribute: {
+	     }
+}
+{
+  op_type: Identity
+  input:   start_max_Where_14 
+  output:  start_max__i 
+  attribute: {
+	     }
+}
+{
+  op_type: Identity
+  input:   start_max_Where_13 
+  output:  start_max_value 
+  attribute: {
+	     }
+}
+{
+  op_type: Identity
+  input:   start_max_Where_14 
+  output:  start_max_index 
+  attribute: {
+	     }
+}
+
+	       num_scan_inputs :
+	       scan_input_directions :
+	       scan_output_directions :
+	     }
+}
+{
+  op_type: Add
+  input:   start_max_value Log11740_Output_0 
+  output:  Add_21 
+  attribute: {
+	     }
+}
+{
+  op_type: Squeeze
+  input:   Add_21 
+  output:  Squeeze_22 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: ArgMax
+  input:   Squeeze_22 
+  output:  ArgMax_23 
+  attribute: {
+	       axis :
+	       keepdims :
+	     }
+}
+{
+  op_type: Cast
+  input:   ArgMax_23 
+  output:  end_pos 
+  attribute: {
+	       to :
+	     }
+}
+{
+  op_type: Transpose
+  input:   Squeeze_22 
+  output:  Transpose_25 
+  attribute: {
+	     }
+}
+{
+  op_type: Hardmax
+  input:   Transpose_25 
+  output:  Hardmax_26 
+  attribute: {
+	     }
+}
+{
+  op_type: Cast
+  input:   Hardmax_26 
+  output:  Cast_27 
+  attribute: {
+	       to :
+	     }
+}
+{
+  op_type: Squeeze
+  input:   start_max_index 
+  output:  Squeeze_28 
+  attribute: {
+	       axes :
+	     }
+}
+{
+  op_type: Transpose
+  input:   Squeeze_28 
+  output:  Transpose_29 
+  attribute: {
+	     }
+}
+{
+  op_type: Reshape
+  input:   Cast_27 _Const_0 
+  output:  Reshape_30 
+  attribute: {
+	     }
+}
+{
+  op_type: Compress
+  input:   Transpose_29 Reshape_30 
+  output:  Compress_31 
+  attribute: {
+	     }
+}
+{
+  op_type: Cast
+  input:   Compress_31 
+  output:  start_pos 
+  attribute: {
+	       to :
+	     }
+}

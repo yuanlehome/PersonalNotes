@@ -1,0 +1,135 @@
+@startuml
+class AttributeProto
+class ValueInfoProto
+class NodeProto
+class TrainingInfoProto
+class OperatorSetIdProto
+class StringStringEntryProto
+class TrainingInfoProto
+class FunctionProto
+
+
+class ModelProto {
+  optional int64 ir_version
+  optional string producer_name;
+  optional string producer_version;
+  optional string domain;
+  optional int64 model_version;
+  optional string doc_string;
+  optional GraphProto graph;
+  repeated OperatorSetIdProto opset_import;
+  repeated StringStringEntryProto metadata_props;
+  repeated TrainingInfoProto training_info;
+  repeated FunctionProto functions;
+}
+
+ModelProto --> GraphProto
+ModelProto --> OperatorSetIdProto
+ModelProto --> StringStringEntryProto
+ModelProto --> TrainingInfoProto
+ModelProto --> FunctionProto
+
+class GraphProto {
+  repeated NodeProto node;
+  optional string name;
+  repeated TensorProto initializer;
+  repeated SparseTensorProto sparse_initializer;
+  optional string doc_string;
+  repeated ValueInfoProto input;
+  repeated ValueInfoProto output;
+  repeated ValueInfoProto value_info;
+  repeated TensorAnnotation quantization_annotation;
+}
+GraphProto --> NodeProto
+GraphProto --> TensorProto
+GraphProto --> SparseTensorProto
+GraphProto --> ValueInfoProto
+GraphProto --> TensorAnnotation
+
+class NodeProto {
+  repeated string input;
+  repeated string output;
+  optional string name;
+  optional string op_type;
+  optional string domain;
+  repeated AttributeProto attribute;
+  optional string doc_string;
+}
+NodeProto --> AttributeProto
+
+class AttributeProto{
+  optional string name;
+  optional string ref_attr_name;
+  optional string doc_string;
+  optional AttributeType type;
+  optional float f;
+  optional int64 i;
+  optional bytes s;
+  optional TensorProto t;
+  optional GraphProto g;
+  optional SparseTensorProto sparse_tensor;
+  optional TypeProto tp;
+  repeated float floats;
+  repeated int64 ints;
+  repeated bytes strings;
+  repeated TensorProto tensors;
+  repeated GraphProto graphs;
+  repeated SparseTensorProto sparse_tensors;
+  repeated TypeProto type_protos;
+}
+AttributeProto --> TensorProto
+AttributeProto --> SparseTensorProto
+AttributeProto --> TypeProto
+
+class TensorProto {
+  optional string name;
+  optional string doc_string;
+  repeated int64 dims;
+  optional int32 data_type;
+  optional bytes raw_data;
+  optional Segment segment;
+  repeated float float_data;
+  repeated int32 int32_data;
+  repeated bytes string_data;
+  repeated int64 int64_data;
+  repeated StringStringEntryProto external_data;
+  optional DataLocation data_location;
+  repeated double double_data;
+  repeated uint64 uint64_data;
+}
+TensorProto --> StringStringEntryProto
+
+class TypeProto{
+  optional string denotation;
+  message Tensor {
+    optional int32 elem_type;
+    optional TensorShapeProto shape;
+  };
+  oneof value {
+    Tensor tensor_type;
+    Sequence sequence_type;
+    Map map_type;
+    Optional optional_type;
+    SparseTensor sparse_tensor_type;
+  };
+}
+TypeProto --> TensorShapeProto
+
+class TensorShapeProto {
+  message Dimension {
+    oneof value {
+      int64 dim_value;
+      string dim_param;
+    };
+    optional string denotation;
+  };
+  repeated Dimension dim;
+}
+
+class  ValueInfoProto { 
+  optional string name;
+  optional TypeProto type = 2;
+  optional string doc_string = 3;
+}
+ValueInfoProto --> TypeProto
+@enduml

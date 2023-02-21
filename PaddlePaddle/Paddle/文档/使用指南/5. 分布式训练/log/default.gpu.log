@@ -1,0 +1,16 @@
+index,uuid,driver_version,name,gpu_serial,display_active,display_mode
+0,GPU-8e2a8279-859d-48f2-e17d-9c0cf1f31fef,515.48.07,Tesla T4,1322120080140,Disabled,Disabled
+1,GPU-e3e862a0-f3c2-5cd7-77bc-89dff4aa875e,515.48.07,Tesla T4,1322120114894,Disabled,Enabled
+
+pid,process_name,gpu_uuid,gpu_name,used_memory
+76270,[Not Found],GPU-8e2a8279-859d-48f2-e17d-9c0cf1f31fef,Tesla T4,275
+2238,[Not Found],GPU-8e2a8279-859d-48f2-e17d-9c0cf1f31fef,Tesla T4,733
+70168,[Not Found],GPU-8e2a8279-859d-48f2-e17d-9c0cf1f31fef,Tesla T4,741
+85177,[Not Found],GPU-8e2a8279-859d-48f2-e17d-9c0cf1f31fef,Tesla T4,741
+92780,[Not Found],GPU-8e2a8279-859d-48f2-e17d-9c0cf1f31fef,Tesla T4,507
+2658,[Not Found],GPU-8e2a8279-859d-48f2-e17d-9c0cf1f31fef,Tesla T4,1965
+47331,[Not Found],GPU-8e2a8279-859d-48f2-e17d-9c0cf1f31fef,Tesla T4,3421
+
+index,utilization_gpu,memory_total,memory_used,memory_free,timestamp
+0,0,15360,8413,6550,2023/01/05 09:09:25.209
+1,0,15360,3,15106,2023/01/05 09:09:25.238

@@ -1,0 +1,63 @@
+grep: warning: GREP_OPTIONS is deprecated; please use an alias or script
+[2023-01-05 08:50:15,176] [    INFO] distributed_strategy.py:147 - distributed strategy initialized
+I0105 08:50:15.176816 67839 tcp_utils.cc:130] Successfully connected to 10.75.148.145:41258
+W0105 08:50:22.072114 67839 gpu_resources.cc:61] Please NOTE: device: 1, GPU Compute Capability: 7.5, Driver API Version: 11.7, Runtime API Version: 11.6
+W0105 08:50:22.079136 67839 gpu_resources.cc:91] device: 1, cuDNN Version: 8.4.
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::distributed::ProcessGroupNCCL::Barrier(paddle::distributed::BarrierOptions const&)
+1   paddle::distributed::ProcessGroupNCCL::AllReduce(phi::DenseTensor*, phi::DenseTensor const&, paddle::distributed::AllreduceOptions const&, bool, bool)
+2   paddle::distributed::ProcessGroupNCCL::RunFnInNCCLEnv(std::function<void (ncclComm*, CUstream_st*)>, phi::DenseTensor const&, paddle::distributed::CommType, bool, bool)
+3   paddle::distributed::ProcessGroupNCCL::CreateNCCLEnvCache(phi::Place const&, std::string const&)
+4   ncclCommInitRank
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Access to an undefined portion of a memory object` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1672908624 (unix time) try "date -d @1672908624" if you are using GNU date ***]
+  [SignalInfo: *** SIGBUS (@0x7f0cd0f2f000) received by PID 67839 (TID 0x7f0d8e1eb740) from PID 18446744072920166400 ***]
+
+grep: warning: GREP_OPTIONS is deprecated; please use an alias or script
+I0105 09:06:32.237399 73133 tcp_utils.cc:130] Successfully connected to 10.75.148.145:43754
+W0105 09:06:40.148838 73133 gpu_resources.cc:61] Please NOTE: device: 1, GPU Compute Capability: 7.5, Driver API Version: 11.7, Runtime API Version: 11.7
+W0105 09:06:40.155512 73133 gpu_resources.cc:91] device: 1, cuDNN Version: 8.4.
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+0   paddle::distributed::ProcessGroupNCCL::Barrier(paddle::distributed::BarrierOptions const&)
+1   paddle::distributed::ProcessGroupNCCL::AllReduce(std::vector<phi::DenseTensor, std::allocator<phi::DenseTensor> >&, std::vector<phi::DenseTensor, std::allocator<phi::DenseTensor> >&, paddle::distributed::AllreduceOptions const&)
+2   paddle::distributed::ProcessGroupNCCL::CreateNCCLManagerCache(std::string const&, std::vector<phi::Place, std::allocator<phi::Place> > const&)
+3   ncclGroupEnd
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Termination signal` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1672909605 (unix time) try "date -d @1672909605" if you are using GNU date ***]
+  [SignalInfo: *** SIGTERM (@0x11d4b) received by PID 73133 (TID 0x7ff3cc1d6740) from PID 73035 ***]
+
+grep: warning: GREP_OPTIONS is deprecated; please use an alias or script
+I0105 09:09:27.922330 73938 tcp_utils.cc:107] Retry to connect to 10.75.148.145:37454 while the server is not yet listening.
+I0105 09:09:30.922560 73938 tcp_utils.cc:130] Successfully connected to 10.75.148.145:37454
+W0105 09:09:38.778851 73938 gpu_resources.cc:61] Please NOTE: device: 1, GPU Compute Capability: 7.5, Driver API Version: 11.7, Runtime API Version: 11.7
+W0105 09:09:38.785617 73938 gpu_resources.cc:91] device: 1, cuDNN Version: 8.4.
+
+
+--------------------------------------
+C++ Traceback (most recent call last):
+--------------------------------------
+No stack trace in paddle, may be caused by external reasons.
+
+----------------------
+Error Message Summary:
+----------------------
+FatalError: `Access to an undefined portion of a memory object` is detected by the operating system.
+  [TimeInfo: *** Aborted at 1672909779 (unix time) try "date -d @1672909779" if you are using GNU date ***]
+  [SignalInfo: *** SIGBUS (@0x7fdf4c035000) received by PID 73938 (TID 0x7fdf4ce36700) from PID 1275285504 ***]
+
