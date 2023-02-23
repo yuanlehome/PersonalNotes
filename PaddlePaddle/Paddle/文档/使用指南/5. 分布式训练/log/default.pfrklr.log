@@ -1,1 +1,0 @@
-[{'name': 'pfrklr', 'rank': -1, 'replicas': 2, 'dtype': 'gpu', 'candidate': '10.75.148.145:43754', 'endpoints': '10.75.148.145:43755,10.75.148.145:43756'}]

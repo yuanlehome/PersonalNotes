@@ -1,1 +1,0 @@
-[{'name': 'xrfair', 'rank': -1, 'replicas': 2, 'dtype': 'gpu', 'candidate': '10.75.148.145:37454', 'endpoints': '10.75.148.145:37455,10.75.148.145:37456'}]
