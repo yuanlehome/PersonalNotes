@@ -1,5 +1,10 @@
 [odnn 官网教程文档](https://oneapi-src.github.io/oneDNN/index.html)
 
+本目录下的demo都来自 onednn 仓库代码自带的 example, 作者讲它们独立出来，并做了详细的注释。
+
+建议阅读顺序如下：
+1. getting_started_cpp.cc
+
 其他资料：
 
 微信号： p15080074221

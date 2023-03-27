@@ -2,6 +2,8 @@
 # 拉取别人的pr
 ```shell
 git fetch remote pull/$pr_id/head:$new_name
+git fetch origin pull/50962/head:passes
+git fetch origin pull/48437/head:offload_params
 ```
 
 # 删除远程分支

@@ -8,7 +8,7 @@
 
 g++ -I ../thirdparty/oneDNN/include/ -I  ../thirdparty/oneDNN/build/include/  getting_started_cpp.cc -L /weishengying/oneDNN/build/src/ -ldnnl
 
-注意修改链接文件路径。
+自己编译时注意修改链接文件路径。
 
 执行：
 export LD_LIBRARY_PATH=../thirdparty/oneDNN/build/src

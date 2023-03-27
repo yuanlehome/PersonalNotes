@@ -254,13 +254,9 @@ add.c  add.o  div.c  div.o  libmymath.so  main.c  sub.c  sub.o  test.h
    export C_INCLUDE_PATH=...
 
 
-
-
-
-
-
 # 附件
 [GCC 使用手册](https://gcc.gnu.org/onlinedocs/gcc-12.2.0/gcc/)
+[GCC 源码包](https://gcc.gnu.org/mirrors.html)
 
 `nonnull`
 `nonnull (arg-index, …)`
