@@ -25,7 +25,8 @@ onednn 2.7 和 3.0 的区别
 计算流程上：
     3.0
         f32 输出时： (Q_src * Q_weight) *（src_scale * weight_scale）+ F32_bias
-        s8 输出时： （(Q_src * Q_weight) *（src_scale * weight_scale）+ F32_bias）/ dst_scale
+        s8 输出时： （(Q_src * Q_weight) *（src_scale * weight_scale）+ F32_bias）/ dst_scales
+
     2.3
         developer 需要提前使用 src_scale 和 weight_scale 将 f32 的 bias 量化为 s32 的 bias;
         s32_bias = f32_bias / (src_scale * weight_scale)
