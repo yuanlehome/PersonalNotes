@@ -5,6 +5,9 @@
 g++ cblas_dgemm.cc -I /weishengying/download/intel/mkl/latest/include/ \
 -L /weishengying/download/intel/mkl/latest/lib/intel64/ -lmkl_rt -liomp5
 
+一些定义：
+row-major: 在同一行的元素在内存中是相邻的；
+column-major: 同一列的元素在内存中是相邻的。
 */
 
 #include <stdio.h>
